@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="3">
+    <LinearLayout
+        android:id="@+id/colorDisplay"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@drawable/color_display"
+        android:orientation="horizontal" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:layout_margin = "10dp">
+
+        <TextView
+            android:id="@+id/redColorValueTextId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Red(0-255): 0"/>
+        <SeekBar
+            android:id="@+id/redColorSeekBarId"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:min="0"
+            android:max="255"
+            android:thumbTint="@android:color/holo_red_light"
+            android:progressBackgroundTint="@android:color/holo_red_light"
+            android:progressTint="@android:color/holo_red_dark" />
+        <TextView
+            android:id="@+id/greenColorValueTextId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Green(0-255): 0"/>
+        <SeekBar
+            android:id="@+id/greenColorSeekBarId"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:min="0"
+            android:max="255"
+            android:thumbTint="@android:color/holo_green_light"
+            android:progressBackgroundTint="@android:color/holo_green_light"
+            android:progressTint="@android:color/holo_green_dark" />
+        <TextView
+            android:id="@+id/blueColorValueTextId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blue(0-255): 0"/>
+        <SeekBar
+            android:id="@+id/blueColorSeekBarId"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:min="0"
+            android:max="255"
+            android:thumbTint="@android:color/holo_blue_light"
+            android:progressBackgroundTint="@android:color/holo_blue_light"
+            android:progressTint="@android:color/holo_blue_dark" />
+    </LinearLayout>
+</LinearLayout>
